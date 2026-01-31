@@ -1,0 +1,48 @@
+# Robots.txt optimisé pour Traffik Web
+# Remplace ton robots.txt existant
+
+User-agent: *
+Allow: /
+
+# Bloquer les pages WordPress admin et sensibles
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /wp-content/plugins/
+Disallow: /wp-content/cache/
+Disallow: /wp-json/
+Disallow: /trackback/
+Disallow: /xmlrpc.php
+Disallow: /?s=
+Disallow: /search/
+Disallow: /author/
+Disallow: /tag/
+Disallow: /category/
+Disallow: /feed/
+Disallow: /comments/
+Disallow: */trackback/
+Disallow: */feed/
+Disallow: */comments/
+Disallow: /?attachment_id=
+
+# Autoriser les CSS et JS pour le rendu
+Allow: /wp-content/themes/
+Allow: /wp-content/uploads/
+Allow: *.css
+Allow: *.js
+
+# Sitemap
+Sitemap: https://traffik-web.fr/sitemap.xml
+Sitemap: https://traffik-web.fr/sitemap_index.xml
+
+# Crawl-delay pour les bots gourmands
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
