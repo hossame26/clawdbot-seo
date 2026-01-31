@@ -1,6 +1,3 @@
 {
-  "buildCommand": "cd ../.. && pnpm install && pnpm build --filter=@clawdbot/web",
-  "outputDirectory": ".next",
-  "installCommand": "pnpm install",
   "framework": "nextjs"
 }
